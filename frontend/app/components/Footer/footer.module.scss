@@ -1,0 +1,53 @@
+.footer{
+  display:  flex;
+  justify-content: center;
+  background: #2E2A87;
+  padding: 20px 0;
+  border-radius: 10px 10px 0 0;
+  color: #eee;
+
+
+  .subfooter{
+    display:  flex;
+    flex-direction: column;
+    width: 1100px;
+
+    .sections{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 10px;
+
+      .section{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        max-width: 400px;
+
+        .title{
+          font-size: 1.2rem;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .line{
+      text-decoration: underline;
+      height: 1px;
+      background: #c1c1c1;
+      margin: 10px 0 ;
+    }
+
+    .underline{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 10px;
+      
+      .date-copyrigt{
+        display: flex;
+        gap: 10px;
+      }
+    }
+
+  }
+  
+}
