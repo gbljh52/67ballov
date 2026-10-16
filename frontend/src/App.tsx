@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./App.module.scss";
 import Header from "./components/Header/header";
 import { Users, ShieldUser, Search, SatelliteDish, User, Star } from 'lucide-react';
 import Footer from "./components/Footer/footer";
@@ -54,7 +53,7 @@ const TeacherRates = [
 export default function Home() {
   return (
       <main>
-        <Image
+        <img
           className={styles.bgImage} 
           src="/bgImage.png"
           width={1920}

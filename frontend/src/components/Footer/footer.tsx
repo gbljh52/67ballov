@@ -1,6 +1,4 @@
-import Link from "next/link";
 import styles from "./footer.module.scss";
-import Image from "next/image";
 
 
 export default function Footer() {
@@ -9,7 +7,7 @@ export default function Footer() {
       <div className={styles.subfooter}>
         <div className={styles.sections}>
           <section className={styles.section}>
-            <Image 
+            <img 
               src="/light-logo.png"
               width={200}
               height={70}
@@ -19,11 +17,11 @@ export default function Footer() {
           </section>
           <section className={styles.section}>
             <h5 className={styles.title}>Навигация</h5>
-              <Link href=''>Главная</Link>
-              <Link href='search'>Поиск репетиторов</Link>
-              <Link href='about'>Как это работает ?</Link>
-              <Link href='login'>Войти</Link>
-              <Link href='register'>Регистрация</Link>
+              <a href=''>Главная</a>
+              <a href='search'>Поиск репетиторов</a>
+              <a href='about'>Как это работает ?</a>
+              <a href='login'>Войти</a>
+              <a href='register'>Регистрация</a>
           </section>
         </div>
         <div className={styles.line}/>
