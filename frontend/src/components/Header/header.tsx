@@ -1,10 +1,14 @@
-import styles from "./header.module.scss";
+import { useNavigate } from "react-router";
+import styles from "./Header.module.scss";
 
 export default function Header() {
+
+  let navigate = useNavigate()
+
   return (
     <div className={styles.page}>
       <nav className={styles.nav}>
-        <a href='/' >
+        <a onClick={() => navigate('')} >
           <img 
             src="/logo.png"
             width={301}
@@ -13,12 +17,12 @@ export default function Header() {
           />
         </a>
         <div className={styles.secondaryLinks}>
-          <a href='search'>Поиск репетиторов</a>
-          <a href='about'>Как это работает ?</a>
+          <a onClick={() => navigate('search')}>Поиск репетиторов</a>
+          <a onClick={() => navigate('about')}>Как это работает ?</a>
         </div>
-        <div>
-          <a href='login' className="button-outline">Войти</a>
-          <a href='register' className="button-base">Регистрация</a>
+        <div className={styles.btns}>
+          <a onClick={() => navigate('login')} className="button-outline">Войти</a>
+          <a onClick={() => navigate('register')} className="button-base">Регистрация</a>
         </div>
       </nav>
     </div>

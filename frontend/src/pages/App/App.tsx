@@ -1,7 +1,7 @@
 import styles from "./App.module.scss";
-import Header from "./components/Header/header";
+import Header from "../../components/Header/Header";
 import { Users, ShieldUser, Search, SatelliteDish, User, Star } from 'lucide-react';
-import Footer from "./components/Footer/footer";
+import Footer from "../../components/Footer/Footer";
 
 const infoTables = [
   {
