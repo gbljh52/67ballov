@@ -1,0 +1,63 @@
+@use '../../variables' as *;
+
+.header {
+  background: $bg;
+  position: relative;
+  z-index: 10;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 72px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.logoNum { color: $primary; }
+
+.nav {
+  display: flex;
+  gap: 28px;
+  margin-left: 16px;
+  font-size: 14px;
+
+  a { color: $text; transition: color 0.15s; &:hover { color: $primary; } }
+
+  @include md { display: none; }
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.login, .signup {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: $radius-s;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.login {
+  background: $bg;
+  color: $text;
+  border: 1px solid $border;
+  &:hover { border-color: $primary; }
+}
+
+.signup {
+  background: $primary;
+  color: #fff;
+  border: 1px solid $primary;
+  &:hover { background: $primary-dark; }
+}
