@@ -10,11 +10,11 @@ export default function Login() {
       <h2 className={styles.h2}>Вход</h2>
       <div>
         <p>E-mail</p>
-        <input className={styles.input} type="email" />
+        <input className='input' type="email" />
       </div>
       <div>
         <p>Пароль</p>
-        <input  className={styles.input} type="password" />
+        <input  className='input' type="password" />
       </div>
       <button  className='button-base'>Войти</button>
       <div className={styles.hintLink}>

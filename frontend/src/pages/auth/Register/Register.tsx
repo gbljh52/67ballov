@@ -94,28 +94,28 @@ export default function Register() {
               <p>E-mail</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <input className={styles.input} type="text" required />
+            <input className='input' type="text" required />
           </div>
           <div>
             <div className={styles.inputText}>
               <p>Пароль</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <input className={styles.input} type="password" required />
+            <input className='input' type="password" required />
           </div>
           <div>
             <div className={styles.inputText}>
               <p>Пароль повторно</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <input className={styles.input} type="password" required />
+            <input className='input' type="password" required />
           </div>
           <div>
             <div className={styles.inputText}>
               <p>Номер телефона</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <IMaskInput className={styles.input}
+            <IMaskInput className='input'
               mask="+7 (000) 000-00-00"
               placeholder="+7 (987) 654-32-10"
               onAccept={(value: string) => console.log(value)}
@@ -126,27 +126,27 @@ export default function Register() {
               <p>Имя</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <input className={styles.input} type="text" required />
+            <input className='input' type="text" required />
           </div>
           <div>
             <div className={styles.inputText}>
               <p>Фамилия</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <input className={styles.input} type="text" required />
+            <input className='input' type="text" required />
           </div>
           <div>
             <div className={styles.inputText}>
               <p>Отчество</p>
             </div>
-            <input className={styles.input} type="text" required />
+            <input className='input' type="text" required />
           </div>
           <div>
             <div className={styles.inputText}>
               <p>Опыт работы</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <select className={styles.select} name="lengthOfStudy" id="" required>
+            <select className='select' name="lengthOfStudy" id="" required>
               {experienceJob.map((el) => (
                 <option
                   className={styles.option}
@@ -185,7 +185,7 @@ export default function Register() {
               onClick={() => setIsFocusedOnInput(true)}
               onFocus={() => setIsFocusedOnInput(true)}
               onBlur={() => setIsFocusedOnInput(false)}
-              className={styles.input}
+              className='input'
               type="text"
               required
               placeholder='Шахматы'
@@ -211,14 +211,14 @@ export default function Register() {
               <p>E-mail</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <input className={styles.input} type="text" required />
+            <input className='input' type="text" required />
           </div>
           <div>
             <div className={styles.inputText}>
               <p>Пароль</p>
               <p className={styles.redDot}>*</p>
             </div>
-            <input className={styles.input} type="password" required />
+            <input className='input' type="password" required />
           </div>
         </div>
       }

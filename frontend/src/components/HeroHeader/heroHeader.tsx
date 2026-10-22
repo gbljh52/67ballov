@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
-import styles from "./Header.module.scss";
+import styles from "./HeroHeader.module.scss";
 
-export default function Header() {
+export default function HeroHeader() {
 
   let navigate = useNavigate()
 

@@ -7,38 +7,6 @@
   width: 40px;
 }
 
-.input{
-  background: transparent;
-  border: $color-border solid 1px;
-  border-radius: 7px;
-  height: 25px;
-  width: 300px;
-  padding: 0 5px;
-  font-size: 1rem;
-  outline: solid 0px $color-accent;
-  transition: all 0.05s ease-in;
-
-  &:focus{
-    outline: solid 2px $color-accent;
-  }
-}
-
-.select{
-  background: transparent;
-  border: $color-border solid 1px;
-  border-radius: 7px;
-  height: 25px;
-  width: 300px;
-  padding: 0 5px;
-  font-size: 1rem;
-  outline: solid 0px $color-accent;
-  transition: all 0.05s ease-in;
-
-  &:focus{
-    outline: solid 2px $color-accent;
-  }
-}
-
 .position{
   display: flex;
   justify-content: center;

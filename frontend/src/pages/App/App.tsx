@@ -1,5 +1,5 @@
 import styles from "./App.module.scss";
-import Header from "../../components/Header/Header";
+import Header from "../../components/HeroHeader/heroHeader";
 import { Users, ShieldUser, Search, SatelliteDish, User, Star } from 'lucide-react';
 import Footer from "../../components/Footer/Footer";
 
